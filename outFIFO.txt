@@ -1,0 +1,120 @@
+proxyPort:8080
+N:5 R:5 s:3 m:1024 proxyPort:8080 numFollowerServers:1
+server[0]:8081
+==============probeFollowerServers==============
+Connecting to server port: 8081
+numErrors:18 totalRequests:2195
+
+countConnections:1
+FILE[srcSmall.bin] NOT IN cache. Forwarding...
+Added Cache[0] = srcSmall.bin
+Cache[0] = srcSmall.bin
+receiving connection ended
+
+-----------CACHE----------
+Cache[0] = srcSmall.bin
+--------------------------
+Thread  [4] finished processing clientfd[4]
+countConnections:2
+FILE[srcSmall2.bin] NOT IN cache. Forwarding...
+Cache[0] = srcSmall.bin
+Added Cache[1] = srcSmall2.bin
+Cache[0] = srcSmall.bin
+Cache[1] = srcSmall2.bin
+receiving connection ended
+
+-----------CACHE----------
+Cache[0] = srcSmall.bin
+Cache[1] = srcSmall2.bin
+--------------------------
+Thread  [3] finished processing clientfd[5]
+countConnections:3
+FILE[srcSmall3.bin] NOT IN cache. Forwarding...
+Cache[0] = srcSmall.bin
+Cache[1] = srcSmall2.bin
+Added Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall.bin
+Cache[1] = srcSmall2.bin
+Cache[2] = srcSmall3.bin
+receiving connection ended
+
+-----------CACHE----------
+Cache[0] = srcSmall.bin
+Cache[1] = srcSmall2.bin
+Cache[2] = srcSmall3.bin
+--------------------------
+Thread  [2] finished processing clientfd[4]
+countConnections:4
+FILE[srcSmall4.bin] NOT IN cache. Forwarding...
+Cache[0] = srcSmall.bin
+Cache[1] = srcSmall2.bin
+Cache[2] = srcSmall3.bin
+Removed Cache[0] = srcSmall.bin
+Added Cache[0] = srcSmall4.bin
+Cache[1] = srcSmall2.bin
+Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall4.bin
+receiving connection ended
+
+-----------CACHE----------
+Cache[1] = srcSmall2.bin
+Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall4.bin
+--------------------------
+Thread  [1] finished processing clientfd[5]
+countConnections:5
+**************Healthcheck is due**************
+==============probeFollowerServers==============
+Connecting to server port: 8081
+FILE[srcSmall.bin] NOT IN cache. Forwarding...
+Cache[1] = srcSmall2.bin
+Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall4.bin
+Removed Cache[1] = srcSmall2.bin
+Added Cache[1] = srcSmall.bin
+Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall4.bin
+Cache[1] = srcSmall.bin
+receiving connection ended
+
+-----------CACHE----------
+Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall4.bin
+Cache[1] = srcSmall.bin
+--------------------------
+Thread  [0] finished processing clientfd[4]
+numErrors:18 totalRequests:2201
+
+countConnections:6
+FILE[srcSmall3.bin] IS IN cache. Sending HEAD request...
+File date in follower server:Fri, 03 Dec 2021 06:57:48 GMT
+FILE [srcSmall3.bin] age in cache is newer/same than follower server! Sending file...
+
+-----------CACHE----------
+Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall4.bin
+Cache[1] = srcSmall.bin
+--------------------------
+        [SUCCESS]
+countConnections:7
+FILE[srcSmall.bin] IS IN cache. Sending HEAD request...
+File date in follower server:Fri, 03 Dec 2021 06:57:48 GMT
+FILE [srcSmall.bin] age in cache is newer/same than follower server! Sending file...
+
+-----------CACHE----------
+Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall4.bin
+Cache[1] = srcSmall.bin
+--------------------------
+        [SUCCESS]
+countConnections:8
+FILE[srcSmall4.bin] IS IN cache. Sending HEAD request...
+File date in follower server:Fri, 03 Dec 2021 06:57:48 GMT
+FILE [srcSmall4.bin] age in cache is newer/same than follower server! Sending file...
+
+-----------CACHE----------
+Cache[2] = srcSmall3.bin
+Cache[0] = srcSmall4.bin
+Cache[1] = srcSmall.bin
+--------------------------
+        [SUCCESS]
